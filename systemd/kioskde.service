@@ -1,0 +1,11 @@
+[Unit]
+Description=KioskDE Session
+After=graphical.target
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/kiosk-session.sh
+Restart=always
+
+[Install]
+WantedBy=graphical.target
